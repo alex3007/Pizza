@@ -8,11 +8,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter, Route} from "react-router-dom";
+import store from './Store/Store';
 
 ReactDOM.render(
        <BrowserRouter>
-                <App>
-                </App>
+                <App store={store} />
          </BrowserRouter>, document.getElementById('root')
 
     );
