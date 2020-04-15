@@ -2,30 +2,27 @@ import React from 'react';
 import './App.css';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
-import Switcher from './Components/Switcher/Switcher';
-import Items from './Components/Items/Items';
+import SwitcherContainer from './Components/Switcher/SwitcherContainer';
+import ItemsContainer from './Components/Items/ItemsContainer';
 import {BrowserRouter, Route} from "react-router-dom";
 
 function App(props) {
 
-    let pathFood = '/food';
-    let pathDrinks = '/drinks';
-    let pathDishes = '/dishes';
-
-  return (
-    <div className="App">
-     <Header />
-     <Switcher />
-     <Route path={pathFood} render=
-            {() => <Items store={props.store} path={pathFood} /> } />
-     <Route path={pathDrinks} render=
-            {() => <Items store={props.store} path={pathDrinks} /> } />
-     <Route path={pathDishes} render=
-            {() =><Items store={props.store} path={pathDishes} /> } />
-
-     <Footer />
-    </div>
-  );
+    let path = props.store.getState().path;
+    let state = props.store.getState();
+    return (
+        <div className="App">
+            <Header/>
+            <SwitcherContainer path={path} />
+            <Route path={path.food} render=
+                {() => <ItemsContainer path={path.food} state={state}/>}/>
+            <Route path={path.drinks} render=
+                {() => <ItemsContainer path={path.drinks} state={state}/>}/>
+            <Route path={path.dishes} render=
+                {() => <ItemsContainer path={path.dishes} state={state}/>}/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
