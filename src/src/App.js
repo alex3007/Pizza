@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
 import SwitcherContainer from './Components/Switcher/SwitcherContainer';
 import ItemsContainer from './Components/Items/ItemsContainer';
 import {BrowserRouter, Route} from "react-router-dom";
@@ -16,8 +15,6 @@ function App(props) {
         <div className="App">
             <Header path={path}/>
             <SwitcherContainer path={path}/>
-            <Route path={path.home} render=
-                {() => <HomePage state={state}/>}/>
             <Route path={path.contacts} render=
                 {() => <ContactsPage state={state}/>}/>
             <Route path={path.food} render=
@@ -26,7 +23,8 @@ function App(props) {
                 {() => <ItemsContainer path={path.drinks} state={state}/>}/>
             <Route path={path.dishes} render=
                 {() => <ItemsContainer path={path.dishes} state={state}/>}/>
-            <Footer/>
+            <Route path={path.home} render=
+                {() => <HomePage state={state}/>}/>
         </div>
     );
 }

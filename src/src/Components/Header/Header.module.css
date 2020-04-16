@@ -1,3 +1,16 @@
 .navBar{
      margin-left: auto;
  }
+
+.navItem{
+    margin-right: 10px;
+}
+
+.navLink{
+color: #6c757d;
+}
+
+.navLink:hover {
+    color: #26395f;
+    text-decoration: none;
+}
