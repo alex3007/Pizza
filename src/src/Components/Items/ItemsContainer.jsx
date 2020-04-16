@@ -14,7 +14,7 @@ const ItemsContainer = (props) => {
 
     else if (props.path === props.state.path.dishes) {
 
-        productItems = props.state.dishesItems
+        productItems = props.state.souvenirItems
     }
     else {productItems = props.state.foodItems}
     return (

@@ -1,7 +1,8 @@
 import React from 'react';
 import cls from './Header.module.css';
+import {NavLink} from "react-router-dom";
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -14,10 +15,10 @@ const Header = () => {
                     <div className={cls.navBar}>
                     <ul className="navbar-nav mt-10 mt-lg-0">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Shop</a>
+                            <NavLink className="nav-item"  to={props.path.home}>Номе</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Contacts</a>
+                            <NavLink className="nav-item"  to={props.path.contacts}>Contacts</NavLink>
                         </li>
                     </ul>
                    </div>

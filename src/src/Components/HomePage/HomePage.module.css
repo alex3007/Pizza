@@ -1,0 +1,22 @@
+.carousel{
+    max-width:400px;
+    margin: auto;
+    border-radius: 55px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.carouselImage{
+    width: 100%;
+}
+
+
+.wellcome{
+    max-width:160px;
+    text-align: center;
+}
+.intro{
+    margin-top: 40px;
+    font-size: 32px;
+
+}

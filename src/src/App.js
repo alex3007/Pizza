@@ -5,6 +5,8 @@ import Footer from './Components/Footer/Footer';
 import SwitcherContainer from './Components/Switcher/SwitcherContainer';
 import ItemsContainer from './Components/Items/ItemsContainer';
 import {BrowserRouter, Route} from "react-router-dom";
+import HomePage from './Components/HomePage/HomePage'
+import ContactsPage from './Components/ContactsPage/ContactsPage'
 
 function App(props) {
 
@@ -12,8 +14,12 @@ function App(props) {
     let state = props.store.getState();
     return (
         <div className="App">
-            <Header/>
-            <SwitcherContainer path={path} />
+            <Header path={path}/>
+            <SwitcherContainer path={path}/>
+            <Route path={path.home} render=
+                {() => <HomePage state={state}/>}/>
+            <Route path={path.contacts} render=
+                {() => <ContactsPage state={state}/>}/>
             <Route path={path.food} render=
                 {() => <ItemsContainer path={path.food} state={state}/>}/>
             <Route path={path.drinks} render=

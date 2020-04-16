@@ -1,5 +1,13 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 .btnGroup{
     padding: 0 20px !important;
     background-color: #6c757d;
     border-radius: 5px;
+    width: 100%;
+}
+
+i {
+    width: 25px;
+    margin: 0 5px;
 }
