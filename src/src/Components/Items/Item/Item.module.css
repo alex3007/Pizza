@@ -1,5 +1,4 @@
 .card {
-    transition: all .5s linear;
     width: 12rem;
     height: 14rem;
     border-radius: 20px;
@@ -8,11 +7,23 @@
     box-shadow: 0 0 10px;
     overflow: hidden;
     padding-top: 5px;
+    position: relative;
 }
 
-.card:hover {
+.describe{
     transition: all .5s linear;
-    height: 23rem;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    width: 12rem;
+    height: 14rem;
+    padding: 30px 10px;
+}
+
+.card:hover .describe{
+    transition: all .5s linear;
+    opacity: 1;
 }
 
 .card img {
@@ -20,13 +31,4 @@
     width: auto;
     margin-bottom: 20px;
     margin-top: 13px;
-}
-
-.describe{
-    font-size: 14px!important;
-    margin: 0 0;
-}
-
-.line{
-    margin-bottom: 0;
 }

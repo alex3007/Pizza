@@ -11,6 +11,12 @@ color: #6c757d;
 }
 
 .navLink:hover {
-    color: #26395f;
+    color: #000000;
     text-decoration: none;
+
+}
+
+.navLink:focus{
+    color: #000000;
+
 }

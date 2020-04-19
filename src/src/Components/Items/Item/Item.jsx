@@ -7,13 +7,12 @@ const Item = (props) => {
     let image = props.image;
     return (
         <div className={cls.card}>
-            <img src={props.image} className="card-img-top" alt="product"/>
-            <p>{name}</p>
+            <div className={cls.cardBody}>
+                <img src={props.image} className="card-img-top" alt="product"/>
+                <p>{name}</p>
+            </div>
             <div className={cls.describe}>
-                <hr className={cls.line} />
-                <div className="card-body">
                     <p className="card-text">{description}</p>
-                </div>
             </div>
         </div>
     );

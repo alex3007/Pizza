@@ -2,9 +2,17 @@
 
 .btnGroup{
     padding: 0 20px !important;
-    background-color: #6c757d;
+    background-color: #690a13;
     border-radius: 5px;
     width: 100%;
+}
+
+.btnGroup button{
+    background-color:#690a13!important;
+}
+
+button:hover{
+    background-color: #580e16!important;
 }
 
 i {

@@ -53,6 +53,7 @@ let store = {
         ],
         path: {
             home: '',
+            feedbacks: '/feedbacks',
             contacts: '/contacts',
             food: '/pizza',
             drinks: '/drinks',

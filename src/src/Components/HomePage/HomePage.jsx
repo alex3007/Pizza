@@ -2,8 +2,9 @@ import React from 'react';
 import cls from './HomePage.module.css';
 import carouselImgOne from './../../Assets/Images/slide1.jpg';
 import carouselImgTwo from './../../Assets/Images/slide2.jpg';
-import wellcome from './../../Assets/Images/wellcome.jpg';
-import intro from './../../Assets/Images/intro.png';
+import wellcome from './../../Assets/Images/wellcome.png'
+
+
 
 const HomePage = () => {
 
@@ -11,11 +12,7 @@ const HomePage = () => {
     return (
 
         <div className={cls.container}>
-            <div className={cls.carousel}>
-                <h1 className={cls.intro}>Добро пожаловать!</h1>
-                <h2 className={cls.name}>Fresh Pizza </h2>
-                <img src={wellcome} className={cls.wellcome}/>
-            </div>
+            <img src={wellcome} className={cls.wellcome}/>
             <div className={cls.carousel}>
                 <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
                     <div className="carousel-inner">
@@ -39,7 +36,6 @@ const HomePage = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 

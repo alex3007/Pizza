@@ -4,7 +4,7 @@ import cls from './Footer.module.css';
 const Footer = () => {
     return (
         <footer className={cls.footer}>
-        <p className="center">FastBuy 2020</p>
+        <p className="center">FreshPizza 2020</p>
         </footer>
     );
 }
