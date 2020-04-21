@@ -2,30 +2,38 @@ import React from 'react';
 import './App.css';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
-import Switcher from './Components/Switcher/Switcher';
-import Items from './Components/Items/Items';
+import SwitcherContainer from './Components/Switcher/SwitcherContainer';
+import ItemsContainer from './Components/Items/ItemsContainer';
 import {BrowserRouter, Route} from "react-router-dom";
+import HomePage from './Components/HomePage/HomePage';
+import FeedbackPage from './Components/FeedbackPage/FeedbackPage';
+import ContactPage from './Components/ContactPage/ContactPage';
 
 function App(props) {
 
-    let pathFood = '/food';
-    let pathDrinks = '/drinks';
-    let pathDishes = '/dishes';
-
-  return (
-    <div className="App">
-     <Header />
-     <Switcher />
-     <Route path={pathFood} render=
-            {() => <Items store={props.store} path={pathFood} /> } />
-     <Route path={pathDrinks} render=
-            {() => <Items store={props.store} path={pathDrinks} /> } />
-     <Route path={pathDishes} render=
-            {() =><Items store={props.store} path={pathDishes} /> } />
-
-     <Footer />
-    </div>
-  );
+    let path = props.store.getState().path;
+    let state = props.store.getState();
+    return (
+        <div className="App">
+            <Header path={path}/>
+            <SwitcherContainer path={path}/>
+            <Route path={path.food} render=
+                {() => <ItemsContainer path={path.food} state={state}/>}/>
+            <Route path={path.drinks} render=
+                {() => <ItemsContainer path={path.drinks} state={state}/>}/>
+            <Route path={path.dishes} render=
+                {() => <ItemsContainer path={path.dishes} state={state}/>}/>
+            <Route path={path.home} render=
+                {() => <HomePage state={state}/>}/>
+            <Route path={path.feedbacks} render=
+                {() => <FeedbackPage state={state}
+                                     dispatch={props.dispatch}
+                                     newMessageText={state.feedbacks.newMessageText}/>}/>
+            <Route path={path.contacts} render=
+                {() => <ContactPage state={state}/>}/>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
