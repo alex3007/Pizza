@@ -10,14 +10,14 @@ const Switcher = (props) => {
                     <button className="btn btn-secondary"><i className="fa fa-cutlery"/>Пицца</button>
                 </NavLink>
                 <NavLink to={props.path.drinks}>
-                    <button className="btn btn-secondary"><i className="fa fa-glass"/>Напитки</button>
+                    <button className="btn btn-secondary btn-hover"><i className="fa fa-glass"/>Напитки</button>
                 </NavLink>
                 <NavLink to={props.path.dishes}>
-                    <button className="btn btn-secondary"><i className="fa fa-gift"/>Сувениры</button>
+                    <button className="btn btn-secondary" ><i className="fa fa-gift"/>Сувениры</button>
                 </NavLink>
             </div>
         </div>
     );
-}
+};
 
 export default Switcher;

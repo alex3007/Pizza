@@ -1,33 +1,17 @@
 import React from 'react';
-import cls from './FeedbackPage.module.css';
+import {addMessageActionCreator, updateNewMessageActionCreator} from "../../Store/FeedbackReduser";
+import FeedbackPage from './FeedbackPage';
 
-const FeedbackPage = (props) => {
-
-    let newFeedbackElement = React.createRef();
-    let feedbackElements = props.feedbacks
-        .map(message => <Message message={message.message}/>)
+const FeedbackPageContainer = (props) => {
     let onAddMessage = () => {
-        props.addMessage();
-    }
-    let onFeedbackChange = () => {
-        let text = newFeedbackElement.current.value;
-        props.updateNewMessage(text);
-    }
-
-    return (
-        <div className={cls.messageBlock}>
-            <h3>Оставить отзыв:</h3>
-            <textarea onChange={onFeedbackChange}
-                      className={cls.textArea}
-                      ref={newFeedbackElement}
-                      value={props.newMessageText}/>
-            <div>
-                <button onClick={onAddMessage} className={cls.buttonAddFeedback}>Отправить</button>
-            </div>
-            <div>
-                {feedbackElements}
-            </div>
-        </div>
-    )
-}
-export default FeedbackPage;
+        props.dispatch(addMessageActionCreator());
+    };
+    let onFeedbackChange = (text) => {
+        let action = updateNewMessageActionCreator(text);
+        props.dispatch(action);
+    };
+    return (<FeedbackPage onAddMessage={onAddMessage}
+                          onFeedbackChange={onFeedbackChange}
+                          feedbacks={props.state.feedbacks}/>)
+};
+export default FeedbackPageContainer;

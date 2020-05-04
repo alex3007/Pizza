@@ -1,4 +1,5 @@
 import React from 'react';
+import cls from './Message.module.css'
 
 const Message = (props) => {
 
@@ -6,8 +7,8 @@ const Message = (props) => {
     let messageText = props.message;
     return (
         <div>
-            <p>Отзыв {userId}: {messageText}</p>
+            <p><b className={cls.feedbackStyle}>Отзыв {userId}:</b> <i>{messageText}</i></p>
         </div>
     )
-}
+};
 export default Message;

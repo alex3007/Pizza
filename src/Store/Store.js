@@ -1,4 +1,5 @@
 import React from 'react';
+import FeedbackReducer from './FeedbackReduser';
 
 let store = {
 
@@ -98,19 +99,8 @@ let store = {
         this._callSubscriber = observer;
     },
     dispatch(action) {
-        if (action.type === 'ADD-MESSAGE') {
-            let newId = this._state.feedbacks.length +1;
-            let newMessage = {
-                id: newId,
-                message: this._state.feedbacks.newMessageText,
-            };
-            this._state.feedbacks.push(newMessage);
-            this._state.feedbacks.newMessageText = '';
-            this._callSubscriber(this._state);
-        }else if (action.type === 'UPDATE-NEW-MESSAGE-TEXT') {
-            this._state.feedbacks.newMessageText = action.newText;
-            this._callSubscriber(this._state);
-        }
+        this._state.feedbacks = FeedbackReducer(this._state.feedbacks, action);
+        this._callSubscriber(this._state);
     }
 };
 export default store;

@@ -1,13 +1,13 @@
-.navBar{
-     margin-left: auto;
- }
+.navBar {
+    margin-left: auto;
+}
 
-.navItem{
+.navItem {
     margin-right: 10px;
 }
 
-.navLink{
-color: #6c757d;
+.navLink {
+    color: #6c757d;
 }
 
 .navLink:hover {
@@ -16,7 +16,7 @@ color: #6c757d;
 
 }
 
-.navLink:focus{
+.navLink:focus {
     color: #000000;
 
 }

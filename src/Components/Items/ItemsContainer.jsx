@@ -6,23 +6,27 @@ const ItemsContainer = (props) => {
 
     if (props.path === props.state.path.food) {
 
-        productItems = props.state.foodItems}
+        productItems = props.state.foodItems
+    }
 
     else if (props.path === props.state.path.drinks) {
 
-        productItems = props.state.drinksItems}
+        productItems = props.state.drinksItems
+    }
 
     else if (props.path === props.state.path.dishes) {
 
         productItems = props.state.souvenirItems
     }
-    else {productItems = props.state.foodItems}
+    else {
+        productItems = props.state.foodItems
+    }
     return (
         <div>
-            <Items productItems={productItems}  />
+            <Items productItems={productItems}/>
         </div>
     );
-}
+};
 export default ItemsContainer;
 
 

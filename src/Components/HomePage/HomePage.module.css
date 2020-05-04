@@ -1,25 +1,26 @@
-.container{
+.container {
     margin-bottom: 60px;
 }
-.carousel{
-    max-width:600px;
+
+.carousel {
+    max-width: 600px;
     margin: auto;
     border-radius: 35px;
     overflow: hidden;
     margin-top: 20px;
 }
 
-.carouselImage{
+.carouselImage {
     width: 100%;
 }
 
-.wellcome{
-    max-width:400px;
+.wellcome {
+    max-width: 400px;
     text-align: center;
     margin-top: 10px;
 }
 
-.intro{
+.intro {
     font-size: 32px;
     margin-top: 10px;
     margin-bottom: 20px;

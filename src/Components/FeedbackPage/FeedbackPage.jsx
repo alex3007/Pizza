@@ -1,19 +1,18 @@
 import React from 'react';
 import cls from './FeedbackPage.module.css';
-import Message from './Message/Message'
+import Message from './Message/Message';
 
 const FeedbackPage = (props) => {
     let newFeedbackElement = React.createRef();
-    let feedbackElements = props.state.feedbacks
+    let feedbackElements = props.feedbacks
         .map(message => <Message id={message.id} message={message.message}/>)
     let onAddMessage = () => {
-        props.dispatch({type: 'ADD-MESSAGE'});
-    }
+        props.onAddMessage()
+    };
     let onFeedbackChange = () => {
         let text = newFeedbackElement.current.value;
-        let action = {type: 'UPDATE-NEW-MESSAGE-TEXT', newText: text};
-        props.dispatch(action);
-    }
+        props.onFeedbackChange(text);
+    };
     return (
         <div className={cls.feedback}>
             <div className={cls.messageBlock}>
@@ -21,7 +20,7 @@ const FeedbackPage = (props) => {
                 <textarea onChange={onFeedbackChange}
                           className={cls.textArea}
                           ref={newFeedbackElement}
-                          value={props.newMessageText}/>
+                          value={props.feedbacks.newMessageText}/>
                 <div>
                     <button onClick={onAddMessage} className={cls.buttonAddFeedback}>Отправить</button>
                 </div>
@@ -31,5 +30,5 @@ const FeedbackPage = (props) => {
             </div>
         </div>
     )
-}
+};
 export default FeedbackPage;

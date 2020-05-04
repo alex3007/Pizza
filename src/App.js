@@ -6,8 +6,8 @@ import SwitcherContainer from './Components/Switcher/SwitcherContainer';
 import ItemsContainer from './Components/Items/ItemsContainer';
 import {BrowserRouter, Route} from "react-router-dom";
 import HomePage from './Components/HomePage/HomePage';
-import FeedbackPage from './Components/FeedbackPage/FeedbackPage';
 import ContactPage from './Components/ContactPage/ContactPage';
+import FeedbackPageContainer from "./Components/FeedbackPage/FeedbackPageContainer";
 
 function App(props) {
 
@@ -26,12 +26,11 @@ function App(props) {
             <Route path={path.home} render=
                 {() => <HomePage state={state}/>}/>
             <Route path={path.feedbacks} render=
-                {() => <FeedbackPage state={state}
-                                     dispatch={props.dispatch}
-                                     newMessageText={state.feedbacks.newMessageText}/>}/>
+                {() => <FeedbackPageContainer state={state}
+                                              dispatch={props.dispatch}/>}/>
             <Route path={path.contacts} render=
                 {() => <ContactPage state={state}/>}/>
-            <Footer />
+            <Footer/>
         </div>
     );
 }
