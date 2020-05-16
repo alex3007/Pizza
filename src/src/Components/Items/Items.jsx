@@ -4,13 +4,13 @@ import Item from './Item/Item';
 
 const Items = (props) => {
     let productItem = props.productItems.map(name => <Item name={name.name} description={name.description}
-    image={name.image}/>)
+                                                           image={name.image}/>)
     return (
         <div className={cls.itemContainer}>
             {productItem}
         </div>
     );
-}
+};
 export default Items;
 
 

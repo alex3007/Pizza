@@ -5,7 +5,6 @@ import carouselImgTwo from './../../Assets/Images/slide2.jpg';
 import wellcome from './../../Assets/Images/wellcome.png'
 
 
-
 const HomePage = () => {
 
 
@@ -37,6 +36,6 @@ const HomePage = () => {
             </div>
         </div>
     )
-}
+};
 
 export default HomePage;

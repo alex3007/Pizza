@@ -7,7 +7,7 @@ const Footer = () => {
         <p className="center">FreshPizza 2020</p>
         </footer>
     );
-}
+};
 
 export default Footer;
 

@@ -5,7 +5,7 @@ import Message from './Message/Message';
 const FeedbackPage = (props) => {
     let newFeedbackElement = React.createRef();
     let feedbackElements = props.feedbacks
-        .map(message => <Message id={message.id} message={message.message}/>)
+        .map(message => <Message id={message.id} message={message.message}/>);
     let onAddMessage = () => {
         props.onAddMessage()
     };

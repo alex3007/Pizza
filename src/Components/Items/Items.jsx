@@ -10,7 +10,7 @@ const Items = (props) => {
             {productItem}
         </div>
     );
-}
+};
 export default Items;
 
 

@@ -1,8 +1,36 @@
-.textArea{
+.feedback {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.textArea {
     width: 200px;
     height: 100px;
 }
 
-.buttonAddFeedback{
+.buttonAddFeedback {
     width: 200px;
+    color: #ffffff;
+    background-color: #580e16;
+    padding: 3px 0;
+    border-radius: 9px;
+}
+
+.buttonAddFeedback:hover{
+    background-color: #490817;
+}
+
+.messageTextBlock {
+    margin: 35px 20px;
+    text-align: left;
+}
+
+.title {
+    margin-bottom: 10px;
+    color: #490817;
 }
