@@ -8,9 +8,9 @@ const ContactPage = (props) => {
             <h4>Контакты</h4>
             <hr/>
             <ul className={cls.contacts}>
-                <li><b>Телефон:</b> +375(xx)xxx-xx-xx</li>
-                <li><b>Почта:</b> xxxxx@pizza.by</li>
-                <li><b>Адрес:</b> г. Минск, Хмельницкого, 9</li>
+                <li><b>Телефон:</b> +375(33)332-56-03</li>
+                <li><b>Почта:</b> info@pizza.by</li>
+                <li><b>Адрес:</b> г. Минск, ул. Коржа,3 </li>
             </ul>
         </div>
     )
