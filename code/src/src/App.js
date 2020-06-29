@@ -17,21 +17,23 @@ function App(props) {
         <div className="App">
             <Header path={path}/>
             <SwitcherContainer path={path}/>
-            <Switch>
-                <Route path={path.contacts} render=
-                    {() => <ContactPage state={state}/>}/>
-                <Route exact path={path.feedbacks} render=
-                    {() => <FeedbackPageContainer state={state}
-                                                  dispatch={props.dispatch}/>}/>
-                <Route path={path.food} render=
-                    {() => <ItemsContainer path={path.food} state={state}/>}/>
-                <Route path={path.drinks} render=
-                    {() => <ItemsContainer path={path.drinks} state={state}/>}/>
-                <Route path={path.dishes} render=
-                    {() => <ItemsContainer path={path.dishes} state={state}/>}/>
-                <Route path={path.home} render=
-                    {() => <HomePage state={state}/>}/>
-            </Switch>
+            <div className={"homeBackground"}>
+                <Switch>
+                    <Route path={path.contacts} render=
+                        {() => <ContactPage state={state}/>}/>
+                    <Route exact path={path.feedbacks} render=
+                        {() => <FeedbackPageContainer state={state}
+                                                      dispatch={props.dispatch}/>}/>
+                    <Route path={path.food} render=
+                        {() => <ItemsContainer path={path.food} state={state}/>}/>
+                    <Route path={path.drinks} render=
+                        {() => <ItemsContainer path={path.drinks} state={state}/>}/>
+                    <Route path={path.dishes} render=
+                        {() => <ItemsContainer path={path.dishes} state={state}/>}/>
+                    <Route path={path.home} render=
+                        {() => <HomePage state={state}/>}/>
+                </Switch>
+            </div>
             <Footer/>
         </div>
     );
