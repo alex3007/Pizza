@@ -6,8 +6,8 @@ const Message = (props) => {
     let userId = props.id;
     let messageText = props.message;
     return (
-        <div>
-            <p><b className={cls.feedbackStyle}>Отзыв {userId}:</b> <i>{messageText}</i></p>
+        <div className={cls.message}>
+            <p><b className={cls.title}>Отзыв {userId}:</b> <i>{messageText}</i></p>
         </div>
     )
 };

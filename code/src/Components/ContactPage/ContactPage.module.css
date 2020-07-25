@@ -1,8 +1,21 @@
 .contactsBlock {
     margin: auto;
     width: 250px;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 30px;
+    min-height: 400px;
+}
+
+.contactsBlock h4, .contactsBlock ul li {
+    background-color: #580e16;
+    color: #ffffff;
+    padding: 0 5px;
+    border-radius: 5px;
+    box-shadow: #ffffff 0 0 10px;
+}
+
+.contactsBlock ul li {
+    margin-bottom: 5px;
 }
 
 .contacts {

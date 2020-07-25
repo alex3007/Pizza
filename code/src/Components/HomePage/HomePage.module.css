@@ -1,27 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
 .container {
-    margin-bottom: 60px;
+    min-height: 400px;
+
 }
 
 .carousel {
+    display: none;
     max-width: 600px;
     margin: auto;
     border-radius: 15px;
     overflow: hidden;
     margin-top: 20px;
+    box-shadow: #ffffff 0 3px 20px;
 }
 
 .carouselImage {
     width: 100%;
 }
 
-.wellcome {
-    max-width: 300px;
+.wellcomeImage h1{
+    font-family: 'Josefin Sans';
     text-align: center;
-    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    padding-top: 75px;
+    text-shadow: #000000 0 0 10px;
+}
+.wellcomeImage p{
+    font-family: 'Josefin Sans';
+    color: #ffffff;
+    text-shadow: #000000 0 3px 10px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: x-large;
 }
 
 .intro {
     font-size: 32px;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.button{
+    background-color: #ac121b;
+    color: #ffffff;
+    padding: 7px 20px;
+    border-radius: 5px;
+    box-shadow: #ffffff 0 0 10px;
+    margin: auto;
+    text-decoration: none!important;
+}
+.button:hover{
+    background-color: #731118;
+    color: #ffffff!important;
 }
