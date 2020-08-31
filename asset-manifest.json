@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Pizza/static/css/main.5b5f3446.chunk.css",
-    "main.js": "/Pizza/static/js/main.51e04789.chunk.js",
-    "main.js.map": "/Pizza/static/js/main.51e04789.chunk.js.map",
+    "main.css": "/Pizza/static/css/main.d94b021e.chunk.css",
+    "main.js": "/Pizza/static/js/main.02903ea8.chunk.js",
+    "main.js.map": "/Pizza/static/js/main.02903ea8.chunk.js.map",
     "runtime~main.js": "/Pizza/static/js/runtime~main.d57ed729.js",
     "runtime~main.js.map": "/Pizza/static/js/runtime~main.d57ed729.js.map",
     "static/css/2.de424728.chunk.css": "/Pizza/static/css/2.de424728.chunk.css",
-    "static/js/2.53828fb0.chunk.js": "/Pizza/static/js/2.53828fb0.chunk.js",
-    "static/js/2.53828fb0.chunk.js.map": "/Pizza/static/js/2.53828fb0.chunk.js.map",
+    "static/js/2.57512235.chunk.js": "/Pizza/static/js/2.57512235.chunk.js",
+    "static/js/2.57512235.chunk.js.map": "/Pizza/static/js/2.57512235.chunk.js.map",
     "index.html": "/Pizza/index.html",
-    "precache-manifest.f746ba732340f6b85876990ff7f7d5ac.js": "/Pizza/precache-manifest.f746ba732340f6b85876990ff7f7d5ac.js",
+    "precache-manifest.5a23299dadea3fe2848e64ff66c06425.js": "/Pizza/precache-manifest.5a23299dadea3fe2848e64ff66c06425.js",
     "service-worker.js": "/Pizza/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/Pizza/static/css/2.de424728.chunk.css.map",
-    "static/css/main.5b5f3446.chunk.css.map": "/Pizza/static/css/main.5b5f3446.chunk.css.map",
-    "static/media/App.css": "/Pizza/static/media/back.b7df4ac8.jpg",
+    "static/css/main.d94b021e.chunk.css.map": "/Pizza/static/css/main.d94b021e.chunk.css.map",
+    "static/media/App.css": "/Pizza/static/media/back.64de87a4.jpg",
     "static/media/slide1.jpg": "/Pizza/static/media/slide1.a277c2be.jpg",
     "static/media/slide2.jpg": "/Pizza/static/media/slide2.555c5cdf.jpg"
   }
