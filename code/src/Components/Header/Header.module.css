@@ -1,9 +1,27 @@
+.header{
+    background-color: #42060b;
+    margin-bottom: 2px;
+    box-shadow: #ffffff 0 0 2px;
+}
+
+.header a{
+    color: #ffffff!important;
+}
+.header a:hover{
+    color: #bdbbbb !important;
+    transition: all 0.5s;
+}
+.header button{
+    color: #ffffff!important;
+}
+
 .navBar {
     margin-left: auto;
 }
 
 .navItem {
     margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .navLink {

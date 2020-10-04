@@ -84,7 +84,7 @@ let store = {
             home: '',
             feedbacks: '/feedbacks',
             contacts: '/contacts',
-            food: '/pizza',
+            food: '/freshPizza',
             drinks: '/drinks',
             dishes: '/souvenirs'
         }

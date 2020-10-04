@@ -3,7 +3,6 @@
     width: 250px;
     padding-top: 50px;
     padding-bottom: 30px;
-    min-height: 400px;
 }
 
 .contactsBlock h4, .contactsBlock ul li {
@@ -22,4 +21,18 @@
     list-style-type: none;
     text-align: left;
     padding: 0;
+}
+
+
+.carousel {
+    max-width: 600px;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 30px;
+    box-shadow: #ffffff 0 3px 20px;
+}
+
+.carouselImage {
+    width: 100%;
 }

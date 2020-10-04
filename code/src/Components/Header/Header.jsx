@@ -4,9 +4,9 @@ import {NavLink} from "react-router-dom";
 
 const Header = (props) => {
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand mr-5 " href="#">FreshPizza</a>
+        <div className={cls.header}>
+            <nav className="navbar navbar-expand-lg navbar-dark">
+                <a className="navbar-brand mr-5 " href="#">GetPizza</a>
                 <button className="navbar-toggler"
                         type="button" data-toggle="collapse"
                         data-target="#navbarTogglerDemo02"
@@ -20,17 +20,17 @@ const Header = (props) => {
                             <li className={cls.navItem}>
                                 <NavLink className={cls.navLink}
                                          activeClassName={cls.active}
-                                         to={props.path.home}>Номе</NavLink>
+                                         to={props.path.home}>Главная</NavLink>
                             </li>
                             <li className={cls.navItem}>
                                 <NavLink className={cls.navLink}
                                          activeClassName={cls.active}
-                                         to={props.path.feedbacks}>Feedback</NavLink>
+                                         to={props.path.feedbacks}>Отзывы</NavLink>
                             </li>
                             <li className={cls.navItem}>
                                 <NavLink className={cls.navLink}
                                          activeClassName={cls.active}
-                                         to={props.path.contacts}>Contacts</NavLink>
+                                         to={props.path.contacts}>Контакты</NavLink>
                             </li>
                         </ul>
                     </div>

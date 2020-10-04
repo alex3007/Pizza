@@ -1,13 +1,13 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 .btnGroup{
-    padding: 0 20px !important;
     background-color: #690a13;
     width: 100%;
 }
 
 .btnGroup button{
     background-color:#690a13!important;
+    margin: 2px 0;
 }
 
 .btnGroup button:hover{

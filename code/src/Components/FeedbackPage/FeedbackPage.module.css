@@ -4,7 +4,7 @@
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 400px;
+    padding-top: 90px;
 }
 
 .textArea {
@@ -25,11 +25,11 @@
 }
 
 .messageBlock {
-    margin-top: 40px;
+    margin: 10px 0;
 }
 
 .messageTextBlock {
-    margin: 35px 20px;
+    margin: 10px 20px 35px 20px;
     text-align: left;
 }
 
